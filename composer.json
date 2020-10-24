@@ -1,0 +1,50 @@
+{
+    "name": "jonh-wu/laracent",
+    "type": "library",
+    "description": "Centrifugo broadcaster for laravel >= 5.7 and Centrifugo >= 2.1.0",
+    "keywords": ["laravel", "centrifugo", "broadcaster"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonh Wu",
+            "email": "jonhwu@ya.ru"
+        }
+    ],
+    "homepage": "https://github.com/JonhWu/laracent",
+    "support": {
+        "issues": "https://github.com/JonhWu/laracent/issues",
+        "source": "https://github.com/JonhWu/laracent"
+    },
+    "require": {
+        "php": ">=7.2.12",
+        "laravel/framework": "^5.7",
+        "guzzlehttp/guzzle": "^7",
+        "illuminate/broadcasting": "^5.7"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7||^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "JonhWu\\Laracent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JonhWu\\Laracent\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JonhWu\\Laracent\\LaracentServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
