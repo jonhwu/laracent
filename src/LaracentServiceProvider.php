@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexHnydiuk\Laracent;
+namespace JonhWu\Laracent;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;
@@ -34,7 +34,7 @@ class LaracentServiceProvider extends ServiceProvider
             return new Laracent($config, $http);
         });
 
-        $this->app->alias('centrifugo', 'AlexHnydiuk\Laracent\Laracent');
-        $this->app->alias('centrifugo', 'AlexHnydiuk\Laracent\Contracts\Centrifugo');
+        $this->app->alias('centrifugo', 'JonhWu\Laracent\Laracent');
+        $this->app->alias('centrifugo', 'JonhWu\Laracent\Contracts\Centrifugo');
     }
 }

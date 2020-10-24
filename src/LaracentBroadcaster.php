@@ -1,26 +1,26 @@
 <?php
 
-namespace AlexHnydiuk\Laracent;
+namespace JonhWu\Laracent;
 
 use Exception;
 use Illuminate\Broadcasting\BroadcastException;
 use Illuminate\Broadcasting\Broadcasters\Broadcaster;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use AlexHnydiuk\Laracent\Contracts\Centrifugo as Centrifugo;
+use JonhWu\Laracent\Contracts\Centrifugo as Centrifugo;
 
 class LaracentBroadcaster extends Broadcaster
 {
     /**
      * The Centrifugo SDK instance.
      *
-     * @var \AlexHnydiuk\Laracent\Contracts\Centrifugo
+     * @var \JonhWu\Laracent\Contracts\Centrifugo
      */
     protected $centrifugo;
 
     /**
      * Create a new broadcaster instance.
      *
-     * @param  \AlexHnydiuk\Laracent\Contracts\Centrifugo  $centrifugo
+     * @param  \JonhWu\Laracent\Contracts\Centrifugo  $centrifugo
      */
     public function __construct(Centrifugo $centrifugo)
     {

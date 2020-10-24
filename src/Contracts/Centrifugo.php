@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexHnydiuk\Laracent\Contracts;
+namespace JonhWu\Laracent\Contracts;
 
 interface Centrifugo
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace AlexHnydiuk\Laracent;
+namespace JonhWu\Laracent;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\ClientException;
-use AlexHnydiuk\Laracent\Contracts\Centrifugo;
+use JonhWu\Laracent\Contracts\Centrifugo;
 
 class Laracent implements Centrifugo
 {
